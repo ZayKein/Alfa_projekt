@@ -20,7 +20,7 @@ services:
       - ./data:/opt/airflow/data
     ports:
       - "8080:8080"
-    command: standalone
+    command: bash -c "pip install pandas sqlalchemy psycopg2-binary && airflow standalone"
     depends_on:
       - postgres
 
