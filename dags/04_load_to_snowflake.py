@@ -32,11 +32,13 @@ def push_everything_to_snowflake():
         print(f"Nahrávám {pg_table} do Snowflake jako {sf_table}...")
         df = pd.read_sql(f"SELECT * FROM {pg_table}", pg_engine)
 
-        # Snowflake miluje VELKÁ PÍSMENA u sloupců
+        # 1. Sloupce chceme VELKÝMI (pro DAG 05)
         df.columns = [x.upper() for x in df.columns]
 
+        # 2. Název tabulky pošleme MALÝMI (SQLAlchemy/Snowflake standard)
+        # Snowflake ji interně uloží jako velkou, pokud nepoužijeme uvozovky
         df.to_sql(
-            name=sf_table.lower(),  # SQLAlchemy si to přebere
+            name=sf_table.lower(),
             con=sf_engine,
             schema='RAW',
             if_exists='replace',

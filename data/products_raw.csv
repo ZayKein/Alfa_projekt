@@ -1,101 +1,101 @@
 product_id,name,category,subcategory,base_price,unit_cost
-1,PlayStation 5 (id:1),Gaming,Konzole,12750,9562
-2,Steam Deck (id:2),Gaming,Konzole,15476,11607
-3,MSI Katana (id:3),Laptops,Herní notebooky,40652,30489
-4,Oral-B iO (id:4),Beauty,Elektro pro krásu,14056,10542
-5,Hugo Boss Bottled (id:5),Beauty,Parfémy,4650,3488
-6,Nintendo Switch OLED (id:6),Gaming,Konzole,13619,10214
-7,PlayStation 5 (id:7),Gaming,Konzole,18607,13955
-8,Dyson Airwrap (id:8),Beauty,Elektro pro krásu,13065,9799
-9,Braun Series 9 (id:9),Beauty,Elektro pro krásu,23250,17438
-10,iPhone 13 (id:10),Mobily,iPhony,40370,30278
-11,HP Pavilion (id:11),Laptops,Kancelářské,10943,8207
-12,Spider-Man 2 (id:12),Gaming,Hry,2629,1972
-13,Pouzdro MagSafe (id:13),Mobily,Příslušenství,4371,3278
-14,Steam Deck (id:14),Gaming,Konzole,15720,11790
-15,Xbox Series X (id:15),Gaming,Konzole,14759,11069
-16,Spider-Man 2 (id:16),Gaming,Hry,1707,1280
-17,Lenovo ThinkPad (id:17),Laptops,Kancelářské,12681,9511
-18,Dyson Airwrap (id:18),Beauty,Elektro pro krásu,21949,16462
-19,iPhone 15 (id:19),Mobily,iPhony,53894,40420
-20,Nintendo Switch OLED (id:20),Gaming,Konzole,15975,11981
-21,MacBook Air M3 (id:21),Laptops,MacBooky,63338,47504
-22,PlayStation 5 (id:22),Gaming,Konzole,18800,14100
-23,Hugo Boss Bottled (id:23),Beauty,Parfémy,4562,3422
-24,AirPods Pro (id:24),Mobily,Příslušenství,4919,3689
-25,FIFA 24 (id:25),Gaming,Hry,1907,1430
-26,HP Pavilion (id:26),Laptops,Kancelářské,22653,16990
-27,Braun Series 9 (id:27),Beauty,Elektro pro krásu,18832,14124
-28,Xiaomi 14 (id:28),Mobily,Android telefony,15344,11508
-29,Motorola Edge (id:29),Mobily,Android telefony,9750,7312
-30,AirPods Pro (id:30),Mobily,Příslušenství,1603,1202
-31,Spider-Man 2 (id:31),Gaming,Hry,2775,2081
-32,AirPods Pro (id:32),Mobily,Příslušenství,916,687
-33,Samsung Galaxy S24 (id:33),Mobily,Android telefony,16647,12485
-34,Nintendo Switch OLED (id:34),Gaming,Konzole,18410,13808
-35,Armani Acqua di Gio (id:35),Beauty,Parfémy,3421,2566
-36,Motorola Edge (id:36),Mobily,Android telefony,13306,9980
-37,Armani Acqua di Gio (id:37),Beauty,Parfémy,3815,2861
-38,Pouzdro MagSafe (id:38),Mobily,Příslušenství,1111,833
-39,MacBook Air M2 (id:39),Laptops,MacBooky,59165,44374
-40,Lenovo ThinkPad (id:40),Laptops,Kancelářské,13387,10040
-41,HP Pavilion (id:41),Laptops,Kancelářské,11303,8477
-42,Dell Latitude (id:42),Laptops,Kancelářské,9521,7141
-43,Samsung Galaxy Buds (id:43),Mobily,Příslušenství,1245,934
-44,PlayStation 5 (id:44),Gaming,Konzole,18843,14132
-45,PlayStation 5 (id:45),Gaming,Konzole,11071,8303
-46,Nintendo Switch OLED (id:46),Gaming,Konzole,23134,17350
-47,Nabíječka 20W (id:47),Mobily,Příslušenství,2192,1644
-48,Oral-B iO (id:48),Beauty,Elektro pro krásu,19348,14511
-49,Steam Deck (id:49),Gaming,Konzole,22684,17013
-50,Google Pixel 8 (id:50),Mobily,Android telefony,18096,13572
-51,Google Pixel 8 (id:51),Mobily,Android telefony,8721,6541
-52,Chanel No. 5 (id:52),Beauty,Parfémy,3996,2997
-53,PlayStation 5 (id:53),Gaming,Konzole,18748,14061
-54,Steam Deck (id:54),Gaming,Konzole,12566,9424
-55,Google Pixel 8 (id:55),Mobily,Android telefony,8312,6234
-56,ASUS ROG Zephyrus (id:56),Laptops,Herní notebooky,57179,42884
-57,iPhone 15 Pro Max (id:57),Mobily,iPhony,64453,48340
-58,Hugo Boss Bottled (id:58),Beauty,Parfémy,1903,1427
-59,Oral-B iO (id:59),Beauty,Elektro pro krásu,14088,10566
-60,FIFA 24 (id:60),Gaming,Hry,3298,2474
-61,MacBook Air M2 (id:61),Laptops,MacBooky,25416,19062
-62,God of War Ragnarok (id:62),Gaming,Hry,2457,1843
-63,Samsung Galaxy S24 (id:63),Mobily,Android telefony,16637,12478
-64,MacBook Air M2 (id:64),Laptops,MacBooky,53103,39827
-65,iPhone 15 Pro Max (id:65),Mobily,iPhony,35843,26882
-66,Armani Acqua di Gio (id:66),Beauty,Parfémy,4613,3460
-67,Hugo Boss Bottled (id:67),Beauty,Parfémy,785,589
-68,HP Pavilion (id:68),Laptops,Kancelářské,17994,13496
-69,iPhone 15 Pro Max (id:69),Mobily,iPhony,58200,43650
-70,Motorola Edge (id:70),Mobily,Android telefony,22425,16819
-71,MacBook Air M3 (id:71),Laptops,MacBooky,48163,36122
-72,ASUS Vivobook (id:72),Laptops,Kancelářské,18508,13881
-73,FIFA 24 (id:73),Gaming,Hry,4174,3130
-74,Braun Series 9 (id:74),Beauty,Elektro pro krásu,14633,10975
-75,Xbox Series X (id:75),Gaming,Konzole,16403,12302
-76,FIFA 24 (id:76),Gaming,Hry,3537,2653
-77,Acer Predator (id:77),Laptops,Herní notebooky,50609,37957
-78,MacBook Air M2 (id:78),Laptops,MacBooky,63625,47719
-79,AirPods Pro (id:79),Mobily,Příslušenství,4931,3698
-80,Dyson Airwrap (id:80),Beauty,Elektro pro krásu,22556,16917
-81,Nintendo Switch OLED (id:81),Gaming,Konzole,20448,15336
-82,Acer Predator (id:82),Laptops,Herní notebooky,44864,33648
-83,Acer Predator (id:83),Laptops,Herní notebooky,61913,46435
-84,Nabíječka 20W (id:84),Mobily,Příslušenství,1958,1468
-85,Steam Deck (id:85),Gaming,Konzole,16668,12501
-86,Google Pixel 8 (id:86),Mobily,Android telefony,16295,12221
-87,Hugo Boss Bottled (id:87),Beauty,Parfémy,2746,2060
-88,Xiaomi 14 (id:88),Mobily,Android telefony,8363,6272
-89,MacBook Air M2 (id:89),Laptops,MacBooky,46620,34965
-90,Chanel No. 5 (id:90),Beauty,Parfémy,544,408
-91,FIFA 24 (id:91),Gaming,Hry,2909,2182
-92,ASUS Vivobook (id:92),Laptops,Kancelářské,21422,16066
-93,Lenovo Legion 5 (id:93),Laptops,Herní notebooky,59360,44520
-94,Motorola Edge (id:94),Mobily,Android telefony,10684,8013
-95,Elden Ring (id:95),Gaming,Hry,2109,1582
-96,Xbox Series X (id:96),Gaming,Konzole,18360,13770
-97,Dyson Airwrap (id:97),Beauty,Elektro pro krásu,17950,13462
-98,Nintendo Switch OLED (id:98),Gaming,Konzole,23079,17309
-99,Pouzdro MagSafe (id:99),Mobily,Příslušenství,4441,3331
-100,Armani Acqua di Gio (id:100),Beauty,Parfémy,3409,2557
+1,Oral-B iO (id:1),Beauty,Elektro pro krásu,11479,8609
+2,"MacBook Pro 14"" (id:2)",Laptops,MacBooky,35763,26822
+3,Dior Sauvage (id:3),Beauty,Parfémy,2194,1646
+4,FIFA 24 (id:4),Gaming,Hry,4504,3378
+5,Acer Predator (id:5),Laptops,Herní notebooky,34504,25878
+6,Nintendo Switch OLED (id:6),Gaming,Konzole,9409,7057
+7,Google Pixel 8 (id:7),Mobily,Android telefony,14173,10630
+8,Hugo Boss Bottled (id:8),Beauty,Parfémy,954,716
+9,iPhone 14 (id:9),Mobily,iPhony,27412,20559
+10,Armani Acqua di Gio (id:10),Beauty,Parfémy,4000,3000
+11,Hugo Boss Bottled (id:11),Beauty,Parfémy,1820,1365
+12,Lenovo Legion 5 (id:12),Laptops,Herní notebooky,50045,37534
+13,iPhone 14 (id:13),Mobily,iPhony,49925,37444
+14,Pouzdro MagSafe (id:14),Mobily,Příslušenství,2026,1520
+15,Google Pixel 8 (id:15),Mobily,Android telefony,12122,9092
+16,Spider-Man 2 (id:16),Gaming,Hry,720,540
+17,Dell Latitude (id:17),Laptops,Kancelářské,18850,14138
+18,iPhone 13 (id:18),Mobily,iPhony,47072,35304
+19,Nabíječka 20W (id:19),Mobily,Příslušenství,2428,1821
+20,Samsung Galaxy S24 (id:20),Mobily,Android telefony,20219,15164
+21,Elden Ring (id:21),Gaming,Hry,795,596
+22,iPhone 13 (id:22),Mobily,iPhony,58523,43892
+23,Elden Ring (id:23),Gaming,Hry,3173,2380
+24,HP Pavilion (id:24),Laptops,Kancelářské,21757,16318
+25,Steam Deck (id:25),Gaming,Konzole,11288,8466
+26,ASUS Vivobook (id:26),Laptops,Kancelářské,23501,17626
+27,Hugo Boss Bottled (id:27),Beauty,Parfémy,3142,2356
+28,Samsung Galaxy Buds (id:28),Mobily,Příslušenství,3264,2448
+29,PlayStation 5 (id:29),Gaming,Konzole,18633,13975
+30,MSI Katana (id:30),Laptops,Herní notebooky,31050,23288
+31,Dior Sauvage (id:31),Beauty,Parfémy,2618,1964
+32,Steam Deck (id:32),Gaming,Konzole,9409,7057
+33,HP Pavilion (id:33),Laptops,Kancelářské,14299,10724
+34,Oral-B iO (id:34),Beauty,Elektro pro krásu,23997,17998
+35,Hugo Boss Bottled (id:35),Beauty,Parfémy,4810,3608
+36,Oral-B iO (id:36),Beauty,Elektro pro krásu,10441,7831
+37,FIFA 24 (id:37),Gaming,Hry,2172,1629
+38,Dior Sauvage (id:38),Beauty,Parfémy,2828,2121
+39,Oral-B iO (id:39),Beauty,Elektro pro krásu,20177,15133
+40,Armani Acqua di Gio (id:40),Beauty,Parfémy,2298,1724
+41,Samsung Galaxy Buds (id:41),Mobily,Příslušenství,513,385
+42,MacBook Air M3 (id:42),Laptops,MacBooky,52817,39613
+43,Armani Acqua di Gio (id:43),Beauty,Parfémy,2863,2147
+44,Motorola Edge (id:44),Mobily,Android telefony,14058,10544
+45,Samsung Galaxy S24 (id:45),Mobily,Android telefony,19134,14350
+46,Dior Sauvage (id:46),Beauty,Parfémy,4774,3580
+47,God of War Ragnarok (id:47),Gaming,Hry,4091,3068
+48,Samsung Galaxy S24 (id:48),Mobily,Android telefony,16269,12202
+49,Oral-B iO (id:49),Beauty,Elektro pro krásu,20055,15041
+50,MacBook Air M2 (id:50),Laptops,MacBooky,49516,37137
+51,Xiaomi 14 (id:51),Mobily,Android telefony,11551,8663
+52,Dyson Airwrap (id:52),Beauty,Elektro pro krásu,10422,7816
+53,Nintendo Switch OLED (id:53),Gaming,Konzole,15665,11749
+54,MSI Katana (id:54),Laptops,Herní notebooky,55945,41959
+55,Xbox Series X (id:55),Gaming,Konzole,11222,8416
+56,"MacBook Pro 14"" (id:56)",Laptops,MacBooky,47497,35623
+57,Google Pixel 8 (id:57),Mobily,Android telefony,15223,11417
+58,Elden Ring (id:58),Gaming,Hry,3547,2660
+59,Braun Series 9 (id:59),Beauty,Elektro pro krásu,16122,12092
+60,Xiaomi 14 (id:60),Mobily,Android telefony,21866,16400
+61,Steam Deck (id:61),Gaming,Konzole,18316,13737
+62,Philips Lumea (id:62),Beauty,Elektro pro krásu,23841,17881
+63,Acer Predator (id:63),Laptops,Herní notebooky,38435,28826
+64,FIFA 24 (id:64),Gaming,Hry,1665,1249
+65,MacBook Air M2 (id:65),Laptops,MacBooky,38997,29248
+66,MacBook Air M2 (id:66),Laptops,MacBooky,58208,43656
+67,Braun Series 9 (id:67),Beauty,Elektro pro krásu,14096,10572
+68,Oral-B iO (id:68),Beauty,Elektro pro krásu,23517,17638
+69,iPhone 14 (id:69),Mobily,iPhony,37513,28135
+70,Elden Ring (id:70),Gaming,Hry,1549,1162
+71,Oral-B iO (id:71),Beauty,Elektro pro krásu,17336,13002
+72,iPhone 15 Pro Max (id:72),Mobily,iPhony,25983,19487
+73,PlayStation 5 (id:73),Gaming,Konzole,9520,7140
+74,MacBook Air M3 (id:74),Laptops,MacBooky,58473,43855
+75,Armani Acqua di Gio (id:75),Beauty,Parfémy,1306,980
+76,Google Pixel 8 (id:76),Mobily,Android telefony,11411,8558
+77,Hugo Boss Bottled (id:77),Beauty,Parfémy,3993,2995
+78,Nabíječka 20W (id:78),Mobily,Příslušenství,4088,3066
+79,Dell Latitude (id:79),Laptops,Kancelářské,11217,8413
+80,MacBook Air M2 (id:80),Laptops,MacBooky,34146,25610
+81,MacBook Air M2 (id:81),Laptops,MacBooky,54760,41070
+82,Xiaomi 14 (id:82),Mobily,Android telefony,21581,16186
+83,Pouzdro MagSafe (id:83),Mobily,Příslušenství,4440,3330
+84,Elden Ring (id:84),Gaming,Hry,3344,2508
+85,Pouzdro MagSafe (id:85),Mobily,Příslušenství,3970,2978
+86,HP Pavilion (id:86),Laptops,Kancelářské,22140,16605
+87,AirPods Pro (id:87),Mobily,Příslušenství,2519,1889
+88,Armani Acqua di Gio (id:88),Beauty,Parfémy,2067,1550
+89,Dior Sauvage (id:89),Beauty,Parfémy,3933,2950
+90,Dior Sauvage (id:90),Beauty,Parfémy,4876,3657
+91,Armani Acqua di Gio (id:91),Beauty,Parfémy,4946,3710
+92,Nintendo Switch OLED (id:92),Gaming,Konzole,8244,6183
+93,Lenovo ThinkPad (id:93),Laptops,Kancelářské,22007,16505
+94,Steam Deck (id:94),Gaming,Konzole,19500,14625
+95,Chanel No. 5 (id:95),Beauty,Parfémy,2161,1621
+96,Steam Deck (id:96),Gaming,Konzole,10051,7538
+97,MacBook Air M3 (id:97),Laptops,MacBooky,56535,42401
+98,MacBook Air M3 (id:98),Laptops,MacBooky,44983,33737
+99,Hugo Boss Bottled (id:99),Beauty,Parfémy,892,669
+100,Hugo Boss Bottled (id:100),Beauty,Parfémy,2615,1961

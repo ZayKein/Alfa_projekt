@@ -68,7 +68,7 @@ with DAG(
         """
     )
 
-    # 4. Objednávky (Fakta o prodejích) - Obohaceno o zisk
+    # 4. Objednávky (Fakta o prodejích) - Odlehčená verze
     t_orders = PostgresOperator(
         task_id='silver_orders',
         postgres_conn_id='postgres_default',
@@ -76,23 +76,22 @@ with DAG(
             CREATE TABLE IF NOT EXISTS silver.orders_cleaned (
                 order_id INT PRIMARY KEY,
                 product_id INT,
-                category TEXT,
-                subcategory TEXT,
-                total_revenue FLOAT,
-                total_cost FLOAT,
-                gross_profit FLOAT,
                 employee_id INT,
+                quantity INT,
+                service_type TEXT,
+                service_price FLOAT,
                 order_date TIMESTAMP
             );
             INSERT INTO silver.orders_cleaned
             SELECT 
-                o.order_id, o.product_id, p.category, p.subcategory,
-                ((o.quantity * p.base_price) + o.service_price) as total_revenue,
-                (o.quantity * p.unit_cost) as total_cost,
-                ((o.quantity * p.base_price) + o.service_price) - (o.quantity * p.unit_cost) as gross_profit,
-                o.employee_id, CAST(o.order_date AS TIMESTAMP)
+                o.order_id, 
+                o.product_id, 
+                o.employee_id, 
+                o.quantity, 
+                o.service_type,
+                o.service_price,
+                CAST(o.order_date AS TIMESTAMP)
             FROM bronze.raw_orders o
-            LEFT JOIN bronze.raw_products p ON o.product_id = p.product_id
             WHERE o.order_id > (SELECT COALESCE(MAX(order_id), 0) FROM silver.orders_cleaned);
         """
     )
