@@ -30,7 +30,7 @@ def generuj_alza_data():
         for i in range(1, 51):
             cfg = random.choice(cat_configs)
             sub = random.choice(cfg['sub'])
-            price = np.random.uniform(cfg['min'], cfg['max']).round(0)
+            price = round(float(np.random.uniform(cfg['min'], cfg['max'])), 0)
             prod_list.append([i, f"{sub} Model {i}", cfg['cat'], sub, price])
         pd.DataFrame(prod_list, columns=['product_id', 'name', 'category', 'subcategory', 'base_price']).to_csv(products_file, index=False)
 
