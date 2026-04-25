@@ -1,51 +1,101 @@
-product_id,name,category,subcategory,base_price
-1,iPhone Model 1,Mobily,iPhone,28867.0
-2,Samsung Model 2,Mobily,Samsung,34778.0
-3,Holicí strojek Model 3,Beauty,Holicí strojek,1017.0
-4,Samsung Model 4,Mobily,Samsung,34170.0
-5,MacBook Model 5,Laptops,MacBook,16904.0
-6,Lenovo Legion Model 6,Laptops,Lenovo Legion,19220.0
-7,Samsung Model 7,Mobily,Samsung,31144.0
-8,Lenovo Legion Model 8,Laptops,Lenovo Legion,17816.0
-9,iPhone Model 9,Mobily,iPhone,23468.0
-10,Xbox Model 10,Gaming,Xbox,15743.0
-11,Holicí strojek Model 11,Beauty,Holicí strojek,3052.0
-12,iPhone Model 12,Mobily,iPhone,26267.0
-13,Samsung Model 13,Mobily,Samsung,10292.0
-14,Xbox Model 14,Gaming,Xbox,19581.0
-15,Parfém Model 15,Beauty,Parfém,979.0
-16,Parfém Model 16,Beauty,Parfém,814.0
-17,Xbox Model 17,Gaming,Xbox,14531.0
-18,Xbox Model 18,Gaming,Xbox,23749.0
-19,Lenovo Legion Model 19,Laptops,Lenovo Legion,46658.0
-20,Lenovo Legion Model 20,Laptops,Lenovo Legion,34116.0
-21,iPhone Model 21,Mobily,iPhone,22682.0
-22,Parfém Model 22,Beauty,Parfém,2298.0
-23,iPhone Model 23,Mobily,iPhone,22635.0
-24,Lenovo Legion Model 24,Laptops,Lenovo Legion,34740.0
-25,PS5 Model 25,Gaming,PS5,15509.0
-26,MacBook Model 26,Laptops,MacBook,55156.0
-27,MacBook Model 27,Laptops,MacBook,17461.0
-28,Parfém Model 28,Beauty,Parfém,3767.0
-29,MacBook Model 29,Laptops,MacBook,15058.0
-30,Samsung Model 30,Mobily,Samsung,20954.0
-31,Xbox Model 31,Gaming,Xbox,14842.0
-32,Parfém Model 32,Beauty,Parfém,933.0
-33,Parfém Model 33,Beauty,Parfém,1213.0
-34,Parfém Model 34,Beauty,Parfém,1921.0
-35,MacBook Model 35,Laptops,MacBook,40413.0
-36,Parfém Model 36,Beauty,Parfém,2147.0
-37,Samsung Model 37,Mobily,Samsung,17304.0
-38,iPhone Model 38,Mobily,iPhone,33779.0
-39,PS5 Model 39,Gaming,PS5,15885.0
-40,iPhone Model 40,Mobily,iPhone,11866.0
-41,iPhone Model 41,Mobily,iPhone,27655.0
-42,Lenovo Legion Model 42,Laptops,Lenovo Legion,41428.0
-43,Lenovo Legion Model 43,Laptops,Lenovo Legion,31307.0
-44,Lenovo Legion Model 44,Laptops,Lenovo Legion,21379.0
-45,Lenovo Legion Model 45,Laptops,Lenovo Legion,53186.0
-46,Parfém Model 46,Beauty,Parfém,2343.0
-47,Holicí strojek Model 47,Beauty,Holicí strojek,3684.0
-48,Grafická karta Model 48,Gaming,Grafická karta,11788.0
-49,Lenovo Legion Model 49,Laptops,Lenovo Legion,18060.0
-50,Samsung Model 50,Mobily,Samsung,15698.0
+product_id,name,category,subcategory,base_price,unit_cost
+1,PlayStation 5 (id:1),Gaming,Konzole,12750,9562
+2,Steam Deck (id:2),Gaming,Konzole,15476,11607
+3,MSI Katana (id:3),Laptops,Herní notebooky,40652,30489
+4,Oral-B iO (id:4),Beauty,Elektro pro krásu,14056,10542
+5,Hugo Boss Bottled (id:5),Beauty,Parfémy,4650,3488
+6,Nintendo Switch OLED (id:6),Gaming,Konzole,13619,10214
+7,PlayStation 5 (id:7),Gaming,Konzole,18607,13955
+8,Dyson Airwrap (id:8),Beauty,Elektro pro krásu,13065,9799
+9,Braun Series 9 (id:9),Beauty,Elektro pro krásu,23250,17438
+10,iPhone 13 (id:10),Mobily,iPhony,40370,30278
+11,HP Pavilion (id:11),Laptops,Kancelářské,10943,8207
+12,Spider-Man 2 (id:12),Gaming,Hry,2629,1972
+13,Pouzdro MagSafe (id:13),Mobily,Příslušenství,4371,3278
+14,Steam Deck (id:14),Gaming,Konzole,15720,11790
+15,Xbox Series X (id:15),Gaming,Konzole,14759,11069
+16,Spider-Man 2 (id:16),Gaming,Hry,1707,1280
+17,Lenovo ThinkPad (id:17),Laptops,Kancelářské,12681,9511
+18,Dyson Airwrap (id:18),Beauty,Elektro pro krásu,21949,16462
+19,iPhone 15 (id:19),Mobily,iPhony,53894,40420
+20,Nintendo Switch OLED (id:20),Gaming,Konzole,15975,11981
+21,MacBook Air M3 (id:21),Laptops,MacBooky,63338,47504
+22,PlayStation 5 (id:22),Gaming,Konzole,18800,14100
+23,Hugo Boss Bottled (id:23),Beauty,Parfémy,4562,3422
+24,AirPods Pro (id:24),Mobily,Příslušenství,4919,3689
+25,FIFA 24 (id:25),Gaming,Hry,1907,1430
+26,HP Pavilion (id:26),Laptops,Kancelářské,22653,16990
+27,Braun Series 9 (id:27),Beauty,Elektro pro krásu,18832,14124
+28,Xiaomi 14 (id:28),Mobily,Android telefony,15344,11508
+29,Motorola Edge (id:29),Mobily,Android telefony,9750,7312
+30,AirPods Pro (id:30),Mobily,Příslušenství,1603,1202
+31,Spider-Man 2 (id:31),Gaming,Hry,2775,2081
+32,AirPods Pro (id:32),Mobily,Příslušenství,916,687
+33,Samsung Galaxy S24 (id:33),Mobily,Android telefony,16647,12485
+34,Nintendo Switch OLED (id:34),Gaming,Konzole,18410,13808
+35,Armani Acqua di Gio (id:35),Beauty,Parfémy,3421,2566
+36,Motorola Edge (id:36),Mobily,Android telefony,13306,9980
+37,Armani Acqua di Gio (id:37),Beauty,Parfémy,3815,2861
+38,Pouzdro MagSafe (id:38),Mobily,Příslušenství,1111,833
+39,MacBook Air M2 (id:39),Laptops,MacBooky,59165,44374
+40,Lenovo ThinkPad (id:40),Laptops,Kancelářské,13387,10040
+41,HP Pavilion (id:41),Laptops,Kancelářské,11303,8477
+42,Dell Latitude (id:42),Laptops,Kancelářské,9521,7141
+43,Samsung Galaxy Buds (id:43),Mobily,Příslušenství,1245,934
+44,PlayStation 5 (id:44),Gaming,Konzole,18843,14132
+45,PlayStation 5 (id:45),Gaming,Konzole,11071,8303
+46,Nintendo Switch OLED (id:46),Gaming,Konzole,23134,17350
+47,Nabíječka 20W (id:47),Mobily,Příslušenství,2192,1644
+48,Oral-B iO (id:48),Beauty,Elektro pro krásu,19348,14511
+49,Steam Deck (id:49),Gaming,Konzole,22684,17013
+50,Google Pixel 8 (id:50),Mobily,Android telefony,18096,13572
+51,Google Pixel 8 (id:51),Mobily,Android telefony,8721,6541
+52,Chanel No. 5 (id:52),Beauty,Parfémy,3996,2997
+53,PlayStation 5 (id:53),Gaming,Konzole,18748,14061
+54,Steam Deck (id:54),Gaming,Konzole,12566,9424
+55,Google Pixel 8 (id:55),Mobily,Android telefony,8312,6234
+56,ASUS ROG Zephyrus (id:56),Laptops,Herní notebooky,57179,42884
+57,iPhone 15 Pro Max (id:57),Mobily,iPhony,64453,48340
+58,Hugo Boss Bottled (id:58),Beauty,Parfémy,1903,1427
+59,Oral-B iO (id:59),Beauty,Elektro pro krásu,14088,10566
+60,FIFA 24 (id:60),Gaming,Hry,3298,2474
+61,MacBook Air M2 (id:61),Laptops,MacBooky,25416,19062
+62,God of War Ragnarok (id:62),Gaming,Hry,2457,1843
+63,Samsung Galaxy S24 (id:63),Mobily,Android telefony,16637,12478
+64,MacBook Air M2 (id:64),Laptops,MacBooky,53103,39827
+65,iPhone 15 Pro Max (id:65),Mobily,iPhony,35843,26882
+66,Armani Acqua di Gio (id:66),Beauty,Parfémy,4613,3460
+67,Hugo Boss Bottled (id:67),Beauty,Parfémy,785,589
+68,HP Pavilion (id:68),Laptops,Kancelářské,17994,13496
+69,iPhone 15 Pro Max (id:69),Mobily,iPhony,58200,43650
+70,Motorola Edge (id:70),Mobily,Android telefony,22425,16819
+71,MacBook Air M3 (id:71),Laptops,MacBooky,48163,36122
+72,ASUS Vivobook (id:72),Laptops,Kancelářské,18508,13881
+73,FIFA 24 (id:73),Gaming,Hry,4174,3130
+74,Braun Series 9 (id:74),Beauty,Elektro pro krásu,14633,10975
+75,Xbox Series X (id:75),Gaming,Konzole,16403,12302
+76,FIFA 24 (id:76),Gaming,Hry,3537,2653
+77,Acer Predator (id:77),Laptops,Herní notebooky,50609,37957
+78,MacBook Air M2 (id:78),Laptops,MacBooky,63625,47719
+79,AirPods Pro (id:79),Mobily,Příslušenství,4931,3698
+80,Dyson Airwrap (id:80),Beauty,Elektro pro krásu,22556,16917
+81,Nintendo Switch OLED (id:81),Gaming,Konzole,20448,15336
+82,Acer Predator (id:82),Laptops,Herní notebooky,44864,33648
+83,Acer Predator (id:83),Laptops,Herní notebooky,61913,46435
+84,Nabíječka 20W (id:84),Mobily,Příslušenství,1958,1468
+85,Steam Deck (id:85),Gaming,Konzole,16668,12501
+86,Google Pixel 8 (id:86),Mobily,Android telefony,16295,12221
+87,Hugo Boss Bottled (id:87),Beauty,Parfémy,2746,2060
+88,Xiaomi 14 (id:88),Mobily,Android telefony,8363,6272
+89,MacBook Air M2 (id:89),Laptops,MacBooky,46620,34965
+90,Chanel No. 5 (id:90),Beauty,Parfémy,544,408
+91,FIFA 24 (id:91),Gaming,Hry,2909,2182
+92,ASUS Vivobook (id:92),Laptops,Kancelářské,21422,16066
+93,Lenovo Legion 5 (id:93),Laptops,Herní notebooky,59360,44520
+94,Motorola Edge (id:94),Mobily,Android telefony,10684,8013
+95,Elden Ring (id:95),Gaming,Hry,2109,1582
+96,Xbox Series X (id:96),Gaming,Konzole,18360,13770
+97,Dyson Airwrap (id:97),Beauty,Elektro pro krásu,17950,13462
+98,Nintendo Switch OLED (id:98),Gaming,Konzole,23079,17309
+99,Pouzdro MagSafe (id:99),Mobily,Příslušenství,4441,3331
+100,Armani Acqua di Gio (id:100),Beauty,Parfémy,3409,2557
