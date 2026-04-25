@@ -6,50 +6,25 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 def load_csv_to_postgres():
-    # Připojení k DB uvnitř Dockeru
     engine = create_engine('postgresql://airflow:airflow@postgres:5432/airflow')
+    df_orders = pd.read_csv('/opt/airflow/data/orders_raw.csv')
+    df_products = pd.read_csv('/opt/airflow/data/products_raw.csv')
     
-    # Cesty k souborům, které vygeneroval DAG 01
-    path = '/opt/airflow/data'
-    
-    # 1. Nahrání Produktů
-    df_products = pd.read_csv(f'{path}/products_raw.csv')
+    # Nahrání produktů (vždy replace)
     df_products.to_sql('raw_products', engine, schema='bronze', if_exists='replace', index=False)
     
-    # 2. Nahrání Objednávek (těch tvých 3000+ řádků)
-    df_orders = pd.read_csv(f'{path}/orders_raw.csv')
-    df_orders.to_sql('raw_orders', engine, schema='bronze', if_exists='replace', index=False)
-    
-    print("Data úspěšně přenesena z CSV do Postgres schématu BRONZE.")
+    # Inkrementální nahrání objednávek
+    try:
+        existing_ids = pd.read_sql("SELECT order_id FROM bronze.raw_orders", engine)['order_id'].tolist()
+        df_new = df_orders[~df_orders['order_id'].isin(existing_ids)]
+        if not df_new.empty:
+            df_new.to_sql('raw_orders', engine, schema='bronze', if_exists='append', index=False)
+    except:
+        df_orders.to_sql('raw_orders', engine, schema='bronze', if_exists='replace', index=False)
 
-default_args = {
-    'owner': 'zay_kein',
-    'start_date': datetime(2023, 1, 1),
-}
+default_args = {'owner': 'zay_kein', 'start_date': datetime(2023, 1, 1)}
 
-with DAG(
-    '02_load_to_bronze',
-    default_args=default_args,
-    schedule_interval=None,
-    catchup=False,
-    tags=['alza_projekt', 'ingestion']
-) as dag:
-
-    # Úkol A: Příprava schémat v DB
-    setup_db = PostgresOperator(
-        task_id='setup_db_structure',
-        postgres_conn_id='postgres_default',
-        sql="""
-            CREATE SCHEMA IF NOT EXISTS bronze;
-            CREATE SCHEMA IF NOT EXISTS silver;
-            CREATE SCHEMA IF NOT EXISTS gold;
-        """
-    )
-
-    # Úkol B: Samotné nahrání dat přes Python/Pandas
-    ingest_data = PythonOperator(
-        task_id='ingest_csv_to_bronze',
-        python_callable=load_csv_to_postgres
-    )
-
-    setup_db >> ingest_data
+with DAG('02_load_to_bronze', default_args=default_args, schedule_interval=None, catchup=False) as dag:
+    setup = PostgresOperator(task_id='setup', postgres_conn_id='postgres_default', sql="CREATE SCHEMA IF NOT EXISTS bronze;")
+    load = PythonOperator(task_id='load', python_callable=load_csv_to_postgres)
+    setup >> load

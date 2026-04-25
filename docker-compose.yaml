@@ -6,8 +6,10 @@ services:
       - POSTGRES_USER=airflow
       - POSTGRES_PASSWORD=airflow
       - POSTGRES_DB=airflow
+    volumes:
+      - airflow_db_data:/var/lib/postgresql/data
     ports:
-      - "5433:5433"
+      - "5433:5432"
 
   airflow:
     image: apache/airflow:2.7.1
@@ -15,12 +17,14 @@ services:
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__TEST_CONNECTION=Enabled
     volumes:
       - ./dags:/opt/airflow/dags
       - ./data:/opt/airflow/data
     ports:
       - "8080:8080"
-    command: bash -c "pip install pandas sqlalchemy psycopg2-binary && airflow standalone"
+    command: bash -c "pip install pandas sqlalchemy psycopg2-binary apache-airflow-providers-snowflake && airflow standalone"
     depends_on:
       - postgres
-
+volumes:
+  airflow_db_data:
