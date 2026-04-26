@@ -7,7 +7,7 @@ with DAG(
     start_date=datetime(2023, 1, 1),
     schedule_interval=None,
     catchup=False,
-    tags=['silver', 'alza_enterprise']
+    tags=['silver', 'alfa_enterprise']
 ) as dag:
 
     # 1. Produkty (Dimenze)

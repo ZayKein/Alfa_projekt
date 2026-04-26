@@ -132,5 +132,5 @@ def generate_hr_data():
             print(f"Přidáno {len(new_payroll)} nových mzdových záznamů.")
 
 
-with DAG('00_hr_generator', start_date=datetime(2023, 1, 1), schedule_interval=None, catchup=False, tags=['alza_hr']) as dag:
+with DAG('00_hr_generator', start_date=datetime(2023, 1, 1), schedule_interval=None, catchup=False, tags=['alfa_hr']) as dag:
     PythonOperator(task_id='gen_hr', python_callable=generate_hr_data)

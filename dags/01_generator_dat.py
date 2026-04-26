@@ -6,7 +6,7 @@ import random
 import os
 
 
-def generuj_alza_data():
+def generuj_alfa_data():
     path = "/opt/airflow/data"
     df_e = pd.read_csv(f"{path}/employees_master.csv",
                        parse_dates=['hire_date', 'exit_date'])
@@ -90,4 +90,4 @@ def generuj_alza_data():
 
 default_args = {'owner': 'zay_kein', 'start_date': datetime(2023, 1, 1)}
 with DAG('01_generator_dat', default_args=default_args, schedule_interval=None, catchup=False) as dag:
-    PythonOperator(task_id='gen_orders', python_callable=generuj_alza_data)
+    PythonOperator(task_id='gen_orders', python_callable=generuj_alfa_data)

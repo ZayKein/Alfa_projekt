@@ -25,7 +25,7 @@ def push_everything_to_snowflake():
 
     # Pro jistotu vynutíme databázi a schéma v Snowflake
     conn = sf_hook.get_conn()
-    conn.cursor().execute("USE DATABASE ALZA_PROJEKT")
+    conn.cursor().execute("USE DATABASE ALFA_PROJEKT")
     conn.cursor().execute("USE SCHEMA RAW")
 
     for pg_table, sf_table in tables.items():

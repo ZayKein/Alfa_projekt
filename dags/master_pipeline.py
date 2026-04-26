@@ -2,7 +2,7 @@ from airflow import DAG
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from datetime import datetime
 
-with DAG('06_MASTER_ALZA_PIPELINE', start_date=datetime(2023, 1, 1), schedule_interval=None, catchup=False) as dag:
+with DAG('06_MASTER_ALFA_PIPELINE', start_date=datetime(2023, 1, 1), schedule_interval=None, catchup=False) as dag:
 
     t0 = TriggerDagRunOperator(
         task_id='run_hr_gen', trigger_dag_id='00_hr_generator', wait_for_completion=True)
